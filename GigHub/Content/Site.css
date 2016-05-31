@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Bootstrap override*/
+body {
+    font-size: 15px;
+}
+
+h3, .h3 {
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #B77A20;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
