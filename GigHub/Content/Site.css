@@ -36,10 +36,19 @@ h3, .h3 {
     margin-bottom: 20px;
 }
 
-.navbar-inverse .navbar-brand {
-    color: #B77A20;
+.form-control {
+    font-size: 15px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
 }
 
 .navbar-brand {
     font-weight: 700;
+}
+
+.btn {
+    font-size: 15px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    padding: 8px 14px;
 }
