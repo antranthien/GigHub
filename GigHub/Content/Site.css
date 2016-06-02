@@ -28,11 +28,6 @@ span.field-validation-error {
     font-weight: bold;
 }
 
-span.field-validation-error {
-    color: red;
-    font-weight: bold;
-}
-
 /*Bootstrap override*/
 body {
     font-size: 15px;
@@ -48,7 +43,6 @@ h3, .h3 {
 
 .form-control {
     font-size: 15px;
-    -ms-border-radius: 7px;
     border-radius: 7px;
 }
 
@@ -57,10 +51,9 @@ h3, .h3 {
 }
 
 .btn {
-    font-size: 15px;
-    -ms-border-radius: 7px;
-    border-radius: 7px;
-    padding: 8px 14px;
+    /*font-size: 15px;
+     padding: 8px 14px;*/
+    border-radius: 7px; 
 }
 
 /*Page specific styles*/
@@ -78,7 +71,7 @@ h3, .h3 {
 
     .gigs > li .details .artist {
         font-weight: bold;
-        display: block;
+
     }
 
     .gigs > li .details .genre {
@@ -91,7 +84,6 @@ h3, .h3 {
     color: white;
     width: 60px;
     text-align: center;
-     -ms-border-radius: 6px;
     border-radius: 6px;
 }
     .gigs > li .date .month {
@@ -106,5 +98,5 @@ h3, .h3 {
         background: #f5f5dc;
         color: #8b008b;
         font-size: 18px;
-        padding: 6px 12px;
+        padding: 11px 12px;
     }

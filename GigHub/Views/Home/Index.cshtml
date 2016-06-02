@@ -17,14 +17,38 @@
                 </div>
             </div>
             <div class="details">
-                <span class="artist">
+                <div class="artist">
                     @gig.Artist.Name
-                </span>
-                <span class="genre">
+                </div>
+                <div class="genre">
                     @gig.Genre.Name
-                </span>
+                </div>
+                
+                <button data-gig-id="@gig.Id" class="btn btn-sm btn-default js-toggle-attendance">Going?</button>
             </div>
         </li>
     }
 </ul>
 
+@section Scripts{
+    <script>
+        (function() {
+            $(".js-toggle-attendance")
+                .click(function(e) {
+                    var button = $(e.target);
+                    $.post("/api/attendances", { "GigId": button.attr('data-gig-id') })
+                        .done(function() {
+                            button.removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Going");
+
+                        })
+                        .fail(function() {
+                            alert("Cannot register");
+                        });
+                }
+           );
+
+        })();
+    </script>
+}
