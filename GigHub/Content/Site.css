@@ -71,7 +71,7 @@ h3, .h3 {
 
     .gigs > li .details .artist {
         font-weight: bold;
-
+        display: block;
     }
 
     .gigs > li .details .genre {
@@ -98,5 +98,5 @@ h3, .h3 {
         background: #f5f5dc;
         color: #8b008b;
         font-size: 18px;
-        padding: 11px 12px;
+        padding: 6px 12px;
     }
